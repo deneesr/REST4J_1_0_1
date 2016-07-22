@@ -6,10 +6,10 @@ import ua.com.as.exception.ParsingException;
 import ua.com.as.service.HandlerMapper;
 import ua.com.as.service.HandlerMapperImpl;
 
-import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -21,7 +21,7 @@ import java.io.IOException;
  *
  * @see HandlerMapper
  */
-public class DispatcherServlet extends GenericServlet {
+public class DispatcherServlet extends HttpServlet {
 
     private static final Logger LOG = LoggerFactory.getLogger(DispatcherServlet.class);
     private HandlerMapper mapper = new HandlerMapperImpl();
