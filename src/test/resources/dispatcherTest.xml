@@ -1,0 +1,21 @@
+<configuration>
+    <controller fullClassName="ua.com.as.service.ControllerClassTest">
+        <rest path="/getTest" action="GET">
+            <method name="getTest">
+            </method>
+        </rest>
+        <rest path="/postTest" action="POST">
+            <method name="postTest">
+            </method>
+        </rest>
+        <rest path="/putTest" action="PUT">
+            <method name="putTest">
+            </method>
+        </rest>
+        <rest path="/deleteTest" action="DELETE">
+            <method name="deleteTest">
+            </method>
+        </rest>
+
+    </controller>
+</configuration>
